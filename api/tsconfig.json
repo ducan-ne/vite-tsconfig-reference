@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "jsx": "react-jsxdev",
+    "lib": [
+      "esnext"
+    ],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "paths": {
+      "@/*": ["./*"],
+      "@pkg/*": ["../pkg/*"],
+      "@fe/*": ["../src/*"]
+    },
+    "resolveJsonModule": true,
+    "types": [
+      "../src/vite-env.d.ts"
+    ],
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "references": [
+    {
+      "path": "../pkg/tsconfig.json"
+    },
+    {
+      "path": "../tsconfig.json"
+    }
+  ],
+  "include": ["**/*.ts", "**/*.tsx", "../src/vite-env.d.ts"]
+}
