@@ -1,1 +1,1 @@
-export const Test123 = true
+export const FromPkg = true
